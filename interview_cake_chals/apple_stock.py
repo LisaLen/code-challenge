@@ -27,6 +27,9 @@ No "shorting"—you need to buy before you can sell. Also, you can't buy and sel
 
 def get_max_profit(stock_prices):
 
+    if len(stock_prices) < 2:
+        raise ValueError('Getting a profit requires at least 2 prices')
+
     max_val = 0 
     min_val = stock_prices[0]
     max_indx = None
