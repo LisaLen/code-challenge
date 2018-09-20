@@ -26,21 +26,10 @@
 
 
 """
-def count_difference(w1, w2):
-    '''return number of differenced in words of the same lenth'''
-
-    count_diff = 0
-    i = 0
-    while i < min(len(w1), len(w2)):
-        if w1[i] != w2[i]:
-            count_diff += 1
-        i += 1
-
-    
-    return count_diff
 
 def one_away(w1, w2):
     """Given two strings, are they, at most, one edit away?"""
+    
     if abs(len(w1) - len(w2)) > 1:
         return False
 
