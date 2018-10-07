@@ -13,12 +13,8 @@ You need to find the minimum number of swaps required to sort the array in ascen
 3
 
 '''
-import math
-import os
-import random
-import re
-import sys
 
+import re
 
 def minimumswaps(arr):
     
