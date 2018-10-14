@@ -13,7 +13,7 @@ def find_pick(lst):
     left = 0
     right = len(lst) - 1
 
-    pivot_indx =len(lst) // 2
+    pivot_indx = len(lst) // 2
     
     while True:
         if lst[pivot_indx] > lst[pivot_indx -1] and lst[pivot_indx] > lst[pivot_indx +1]:
