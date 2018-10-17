@@ -1,0 +1,131 @@
+Test bubble sort functions
+    >>> from bubble import *
+    
+    >>> lst = [4, 7, 2, 1]
+    >>> bubble_up(lst)
+    >>> lst
+    [4, 2, 1, 7]
+
+    >>> lst = [4, 7, 2, 1]
+    >>> bubble_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+    >>> lst = [4, 7, 2, 1]
+    >>> shorter_bubble_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+    >>> lst = [4, 7, 2, 1]
+    >>> best_bubble_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test merge sort functions
+    >>> from merge import *
+
+    >>> lst1 = [ 2, 3, 7]
+    >>> lst2 = [1, 4, 5]
+    >>> make_merge(lst1, lst2)
+    [2, 3, 7] [1, 4, 5]
+    returning merge [1, 2, 3, 4, 5, 7]
+    [1, 2, 3, 4, 5, 7]
+
+    >>> merge_sort([2, 1, 7, 4])
+    calling merge_sort on [2, 1, 7, 4]
+    calling merge_sort on [2, 1]
+    calling merge_sort on [2]
+    returning [2]
+    calling merge_sort on [1]
+    returning [1]
+    [2] [1]
+    returning merge [1, 2]
+    calling merge_sort on [7, 4]
+    calling merge_sort on [7]
+    returning [7]
+    calling merge_sort on [4]
+    returning [4]
+    [7] [4]
+    returning merge [4, 7]
+    [1, 2] [4, 7]
+    returning merge [1, 2, 4, 7]
+    [1, 2, 4, 7]
+
+    >>> lst = [2, 4, 7, 1, 5, 9, 3]
+    >>> merge_sort(lst) # doctest: +ELLIPSIS
+    calling ...
+    [1, 2, 3, 4, 5, 7, 9]
+
+Test quicksort function
+
+    >>> from quick import *
+    >>> quicksort([2, 4, 7, 1, 5, 9, 3])
+    [1, 2, 3, 4, 5, 7, 9]
+
+Test sorts file
+
+    >>> from sorts import *
+
+Test bubble sorts
+    >>> lst = [4, 7, 2, 1]
+    >>> bubble_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+    >>> lst = [4, 7, 2, 1]
+    >>> shorter_bubble_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+    >>> lst = [4, 7, 2, 1]
+    >>> best_bubble_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test selection sort
+    >>> lst = [4, 7, 2, 1]
+    >>> selection_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test insertion sort
+    >>> lst = [4, 7, 2, 1]
+    >>> insertion_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test shell sort
+    >>> lst = [4, 7, 2, 1]
+    >>> shell_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test merge sort
+    >>> lst = [4, 7, 2, 1]
+    >>> merge_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test quicksort
+    >>> lst = [4, 7, 2, 1]
+    >>> quicksort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test counting sort: Counting algorithm has restricted use cases, so sample is different. 
+    >>> lst = [3, 4, 2, 1]
+    >>> counting_sort(lst)
+    >>> lst
+    [1, 2, 3, 4]
+
+Test heap sort
+    >>> lst = [4, 7, 2, 1]
+    >>> heap_sort(lst)
+    >>> lst
+    [1, 2, 4, 7]
+
+Test tim sort
+    >>> lst = [4, 7, 2, 1]
+    >>> timsort(lst)
+    >>> lst
+    [1, 2, 4, 7]
